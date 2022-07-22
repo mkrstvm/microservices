@@ -3,16 +3,14 @@ using System;
 using System.Linq;
 using System.Collections.Generic;
 using MongoDB.Driver;
-using Play.Catalog.Service.Entities;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
 
-namespace Play.Catalog.Service.Repositories
+namespace Play.Common
 {
     public interface IRepository<T> where T : IEntity
     {
-         Task<IReadOnlyCollection<IEntity>> GetAllAsync();
+         Task<IReadOnlyCollection<T>> GetAllAsync();
          Task<T> GetAsync(Guid id);
-         Task CreateAsync(IEntity entity);
+         Task CreateAsync(T entity);
     }
 }

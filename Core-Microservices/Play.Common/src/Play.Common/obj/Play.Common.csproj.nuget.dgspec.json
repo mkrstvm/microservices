@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/_mkrs_/MyGit/.NetCore-Microservices/Play.Common/src/Play.Common/Play.Common.csproj": {}
+    "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Common/src/Play.Common/Play.Common.csproj": {}
   },
   "projects": {
-    "/Users/_mkrs_/MyGit/.NetCore-Microservices/Play.Common/src/Play.Common/Play.Common.csproj": {
+    "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Common/src/Play.Common/Play.Common.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/_mkrs_/MyGit/.NetCore-Microservices/Play.Common/src/Play.Common/Play.Common.csproj",
+        "projectUniqueName": "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Common/src/Play.Common/Play.Common.csproj",
         "projectName": "Play.Common",
-        "projectPath": "/Users/_mkrs_/MyGit/.NetCore-Microservices/Play.Common/src/Play.Common/Play.Common.csproj",
+        "projectPath": "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Common/src/Play.Common/Play.Common.csproj",
         "packagesPath": "/Users/_mkrs_/.nuget/packages/",
-        "outputPath": "/Users/_mkrs_/MyGit/.NetCore-Microservices/Play.Common/src/Play.Common/obj/",
+        "outputPath": "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Common/src/Play.Common/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -40,6 +40,20 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration.Binder": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.17.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

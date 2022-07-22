@@ -6,6 +6,7 @@ using Play.Catalog.Service.DTOs;
 using Play.Catalog.Service.Entities;
 using Play.Catalog.Service.Repositories;
 using System.Threading.Tasks;
+using Play.Common;
 
 namespace Play.Catalog.Service.Controllers
 {
@@ -23,9 +24,9 @@ namespace Play.Catalog.Service.Controllers
         //     new ItemDto(System.Guid.NewGuid(), "5th Item", 45),
         // };
 
-        private readonly IItemRepository itemRepository;
+        private readonly IRepository<Item> itemRepository;
 
-        public ItemsCOntroller(IItemRepository itemRepository)
+        public ItemsCOntroller(IRepository<Item> itemRepository)
         {
             this.itemRepository = itemRepository;
         }

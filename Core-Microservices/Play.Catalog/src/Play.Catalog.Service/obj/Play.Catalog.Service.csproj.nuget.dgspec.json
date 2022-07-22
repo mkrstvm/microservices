@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/_mkrs_/MyGit/.NetCore-Microservices/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj": {}
+    "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj": {}
   },
   "projects": {
-    "/Users/_mkrs_/MyGit/.NetCore-Microservices/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj": {
+    "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/_mkrs_/MyGit/.NetCore-Microservices/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
+        "projectUniqueName": "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
         "projectName": "Play.Catalog.Service",
-        "projectPath": "/Users/_mkrs_/MyGit/.NetCore-Microservices/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
+        "projectPath": "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj",
         "packagesPath": "/Users/_mkrs_/.nuget/packages/",
-        "outputPath": "/Users/_mkrs_/MyGit/.NetCore-Microservices/Play.Catalog/src/Play.Catalog.Service/obj/",
+        "outputPath": "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -23,6 +23,7 @@
           "net5.0"
         ],
         "sources": {
+          "/Users/_mkrs_/MyGit/microservices/Core-Microservices/packages": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,9 +42,9 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "MongoDB.Driver": {
+            "Play.Common": {
               "target": "Package",
-              "version": "[2.16.1, )"
+              "version": "[0.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

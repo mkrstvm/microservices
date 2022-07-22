@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using MongoDB.Driver;
 using Play.Catalog.Service.Entities;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+using Play.Common;
 
 namespace Play.Catalog.Service.Repositories
 {
@@ -13,25 +13,25 @@ namespace Play.Catalog.Service.Repositories
     {
         private const string collectionName = "items"; //table name
 
-        private readonly IMongoCollection<Item> dbCollection;
+        private readonly IMongoCollection<T> dbCollection;
 
-        private readonly FilterDefinitionBuilder<Item> filter = Builders<Item>.Filter;
+        private readonly FilterDefinitionBuilder<T> filter = Builders<T>.Filter;
 
         public ItemsRepository(IMongoDatabase database)        
         {            
             // var mongoCLient = new MongoClient("mongodb://localhost:27017");
             // var database  = mongoCLient.GetDatabase("Catalog");
-            dbCollection = database.GetCollection<Item>(collectionName);
+            dbCollection = database.GetCollection<T>(collectionName);
         }
-
+ 
         public async Task<IReadOnlyCollection<T>> GetAllAsync()
         {
-            return await dbCollection.Find(filter.Empty).ToListAsync();
+            return (IReadOnlyCollection<T>)await dbCollection.Find(filter.Empty).ToListAsync();
         }
 
         public async Task<T> GetAsync(Guid id)
         {
-            FilterDefinition<Item> filt = filter.Eq(entity => entity.Id, id);
+            FilterDefinition<T> filt = filter.Eq(entity => entity.Id, id);
             return await dbCollection.Find(filt).FirstOrDefaultAsync();
         }
 

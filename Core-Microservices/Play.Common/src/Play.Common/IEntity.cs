@@ -1,4 +1,5 @@
-namespace Play.Catalog.Service.Entities
+using System;
+namespace Play.Common
 {
     public interface IEntity
     {
