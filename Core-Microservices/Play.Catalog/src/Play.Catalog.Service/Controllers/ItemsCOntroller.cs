@@ -4,9 +4,10 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Play.Catalog.Service.DTOs;
 using Play.Catalog.Service.Entities;
-using Play.Catalog.Service.Repositories;
 using System.Threading.Tasks;
 using Play.Common;
+using MassTransit;
+using Play.Contracts;
 
 namespace Play.Catalog.Service.Controllers
 {
@@ -25,10 +26,12 @@ namespace Play.Catalog.Service.Controllers
         // };
 
         private readonly IRepository<Item> itemRepository;
+        private readonly IPublishEndpoint publishEndpoint;
 
-        public ItemsCOntroller(IRepository<Item> itemRepository)
+        public ItemsCOntroller(IRepository<Item> itemRepository, IPublishEndpoint publishEndpoint)
         {
             this.itemRepository = itemRepository;
+            this.publishEndpoint = publishEndpoint;
         }
 
         [HttpGet]
@@ -54,6 +57,9 @@ namespace Play.Catalog.Service.Controllers
                 Price = dto.price
             };
             await itemRepository.CreateAsync(item);        
+
+            await publishEndpoint.Publish(new CatalogItemCreated(item.Id, item.Name, item.Price));
+
             return CreatedAtAction(nameof(PostAsync), new { name = dto.name }, item);
         }
     }

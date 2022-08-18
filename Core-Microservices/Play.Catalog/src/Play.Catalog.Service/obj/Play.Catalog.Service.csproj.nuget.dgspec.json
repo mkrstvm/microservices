@@ -29,7 +29,11 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/Play.Contracts.csproj": {
+                "projectPath": "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/Play.Contracts.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -44,7 +48,7 @@
           "dependencies": {
             "Play.Common": {
               "target": "Package",
-              "version": "[0.0.0, )"
+              "version": "[3.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -65,6 +69,62 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.408/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/Play.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/Play.Contracts.csproj",
+        "projectName": "Play.Contracts",
+        "projectPath": "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/Play.Contracts.csproj",
+        "packagesPath": "/Users/_mkrs_/.nuget/packages/",
+        "outputPath": "/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/_mkrs_/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "/Users/_mkrs_/MyGit/microservices/Core-Microservices/packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

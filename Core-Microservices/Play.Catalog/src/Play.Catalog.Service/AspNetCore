@@ -1,0 +1,14 @@
+  Determining projects to restore...
+  Writing /var/folders/rj/lz75d7t97k3cdz_q4kyl4p0c0000gn/T/tmpFbxReB.tmp
+info : Adding PackageReference for package 'MassTransit' into project '/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/Play.Catalog.Service.csproj'.
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/masstransit/index.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/masstransit/index.json 850ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/masstransit/page/2.0.0/3.2.1.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/masstransit/page/2.0.0/3.2.1.json 862ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/masstransit/page/3.2.2/4.0.0.1357-develop.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/masstransit/page/3.2.2/4.0.0.1357-develop.json 850ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/masstransit/page/4.0.0.1359-develop/5.0.0.1482-develop.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/masstransit/page/4.0.0.1359-develop/5.0.0.1482-develop.json 849ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/masstransit/page/5.0.0.1483-develop/5.1.5.1591-develop.json
+info :   OK https://api.nuget.org/v3/registration5-gz-semver2/masstransit/page/5.0.0.1483-develop/5.1.5.1591-develop.json 854ms
+info :   GET https://api.nuget.org/v3/registration5-gz-semver2/masstransit/page/5.1.5.1592-develop/5.1.5.1753-develop.json

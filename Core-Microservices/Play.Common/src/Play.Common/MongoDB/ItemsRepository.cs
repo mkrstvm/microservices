@@ -1,6 +1,7 @@
 
 using System;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Collections.Generic;
 using MongoDB.Driver;
 using System.Threading.Tasks;
@@ -25,6 +26,11 @@ namespace Play.Common.MongoDB
         public async Task<IReadOnlyCollection<T>> GetAllAsync()
         {
             return await dbCollection.Find(filter.Empty).ToListAsync();
+        }
+
+        public async Task<IReadOnlyCollection<T>> GetAllAsync(Expression<Func<T, bool>> filter)
+        {
+            return await dbCollection.Find(filter).ToListAsync();
         }
 
         public async Task<T> GetAsync(Guid id)

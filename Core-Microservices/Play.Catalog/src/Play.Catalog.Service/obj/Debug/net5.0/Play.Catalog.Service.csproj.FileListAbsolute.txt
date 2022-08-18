@@ -93,3 +93,15 @@
 /Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/Microsoft.Extensions.Primitives.dll
 /Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/Play.Common.dll
 /Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/System.Runtime.CompilerServices.Unsafe.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/MassTransit.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/MassTransit.Abstractions.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/MassTransit.AspNetCoreIntegration.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/MassTransit.ExtensionsDependencyInjectionIntegration.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/MassTransit.RabbitMqTransport.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/RabbitMQ.Client.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/System.Text.Encodings.Web.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/System.Text.Json.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/System.Threading.Channels.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/Play.Contracts.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Catalog.Service/bin/Debug/net5.0/Play.Contracts.pdb

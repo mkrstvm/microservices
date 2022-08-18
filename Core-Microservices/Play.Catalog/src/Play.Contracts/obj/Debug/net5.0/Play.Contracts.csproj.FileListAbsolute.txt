@@ -1,0 +1,12 @@
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/bin/Debug/net5.0/Play.Contracts.deps.json
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/bin/Debug/net5.0/Play.Contracts.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/bin/Debug/net5.0/ref/Play.Contracts.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/bin/Debug/net5.0/Play.Contracts.pdb
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/obj/Debug/net5.0/Play.Contracts.csproj.AssemblyReference.cache
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/obj/Debug/net5.0/Play.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/obj/Debug/net5.0/Play.Contracts.AssemblyInfoInputs.cache
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/obj/Debug/net5.0/Play.Contracts.AssemblyInfo.cs
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/obj/Debug/net5.0/Play.Contracts.csproj.CoreCompileInputs.cache
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/obj/Debug/net5.0/Play.Contracts.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/obj/Debug/net5.0/ref/Play.Contracts.dll
+/Users/_mkrs_/MyGit/microservices/Core-Microservices/Play.Catalog/src/Play.Contracts/obj/Debug/net5.0/Play.Contracts.pdb

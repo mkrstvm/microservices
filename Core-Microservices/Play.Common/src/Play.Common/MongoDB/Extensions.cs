@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
+using MassTransit;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MongoDB.Bson.Serialization;
@@ -23,12 +25,30 @@ namespace Play.Common.MongoDB
                     return mongoClient.GetDatabase(serviceSettings.ServiceName);
 
                 });
+                
 
                 return services;
         }
 
-        public static IServiceCollection AddMongoRespository<T>(this IServiceCollection services) where T : IEntity
+        public static IServiceCollection AddMassTransit(this IServiceCollection services)
         {
+                        services.AddMassTransit(x =>
+                       {
+                            x.AddConsumers(Assembly.GetEntryAssembly());
+
+                           x.UsingRabbitMq((context, configurator) =>
+                           {
+                               var configuration = context.GetService<IConfiguration>();
+                               var serviceSettings = configuration.GetSection(nameof(ServiceSettings)).Get<ServiceSettings>();
+                               var rabbitMQSettings = configuration.GetSection(nameof(RabbitMQSettings)).Get<RabbitMQSettings>();
+                               configurator.Host(rabbitMQSettings.Host);
+                               configurator.ConfigureEndpoints(context, new KebabCaseEndpointNameFormatter(serviceSettings.ServiceName, false));
+                           });
+                       });
+                       return services;
+        }
+
+        public static IServiceCollection AddMongoRespository<T>(this IServiceCollection services) where T : IEntity {
             services.AddSingleton<IRepository<T>>(serviceprovider =>
             {
                 var database = serviceprovider.GetService<IMongoDatabase>();
